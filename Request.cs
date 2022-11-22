@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Structures.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,20 +12,15 @@ namespace Structures
         private int orderID;
         private Client client;
         private DateTime orderDate;
-        public List<Article> articles;
+        private List<Article> articles;
         private double ordersAmount;
 
         public double OrdersAmount 
         { 
             get => ordersAmount; 
-            set
-            {
-                ordersAmount = 0;
-                for (int i = 0; i < articles.Count; i++)
-                {
-                    ordersAmount += articles[i].articlePrice;
-                }
-            } 
+            set => ordersAmount = value;
         }
+
+        public PayType payType;
     }
 }

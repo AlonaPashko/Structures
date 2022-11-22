@@ -1,10 +1,15 @@
 ﻿using Structures;
+using System.Collections;
 
-Request request1 = new Request();
+ArrayList arrayList1 = new ArrayList();
+arrayList1.Add(1);
+arrayList1.Add(3.2);
+arrayList1.AddRange(new string[] { "Hello world" });
+arrayList1.Add("Alona");
 
-request1.articles.Add(new Article { articlePrice = 5 });
-request1.articles.Add(new Article { articlePrice = 4});
-
-Console.WriteLine(request1.OrdersAmount.ToString());
+for (int i = 0; i < arrayList1.Count; i++)
+{
+    Console.Write(arrayList1[i]?.ToString() + " ");
+}
 
 

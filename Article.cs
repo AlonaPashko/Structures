@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Structures.Enums;
 
 namespace Structures
 {
@@ -10,6 +11,8 @@ namespace Structures
     {
         private int articleID;
         private string articleName;
-        public double articlePrice;
+        private double articlePrice;
+
+        public ArticleType articleType;
     }
 }
