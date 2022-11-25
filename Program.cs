@@ -1,15 +1,34 @@
-﻿using Structures;
-using System.Collections;
+﻿
+using Structures;
 
-ArrayList arrayList1 = new ArrayList();
-arrayList1.Add(1);
-arrayList1.Add(3.2);
-arrayList1.AddRange(new string[] { "Hello world" });
-arrayList1.Add("Alona");
-
-for (int i = 0; i < arrayList1.Count; i++)
+internal class Program
 {
-    Console.Write(arrayList1[i]?.ToString() + " ");
+    public static int Sum(int[] array)
+    {
+        int sum = 0;
+        for (int i = 0; i < array.Length; i++)
+        {
+            sum += array[i];
+        }
+        return sum;
+    }
+    public static int Mult(int[] array)
+    {
+        int product = 1;
+        for (int i = 0; i < array.Length; i++)
+        {
+            product *= array[i];
+        }
+        return product;
+    }
+    
+    private static void Main(string[] args)
+    {
+        int[] arr = new int[4] { 1, 3, 4, 5 };
+        CalculateDelegate calculateDelegate = Sum;
+        CalculateDelegate calculateDelegate1 = new CalculateDelegate(Mult);
+        Vector vector1 = new(arr, calculateDelegate1);
+
+        Console.WriteLine(vector1.GetStringArr());
+    }
 }
-
-
