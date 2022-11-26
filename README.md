@@ -9,3 +9,9 @@ An elementary scheme of the functioning of delegates is being implemented:
 There is a Vector class into which an array of integers is passed. 
 The user can pass a numerical operation (for example, the sum of elements or their product). 
 The action is executed and the result is returned.
+
+Created a Person class containing the name and surname fields, decorated with properties, also a class containing the collection of Persons 
+- Peoples class. The Peoples class has an option for filling the collection - the Add method. Also, the Peoples class has a guider field 
+decorated with a property. When a Person is added to the collection that has the same Surname as the Guider, the SameSurname Event is activated, 
+which sends the message to user about it.
+A subclass from the Person class - StrongCompany - with similar event processing logic is also implemented.
