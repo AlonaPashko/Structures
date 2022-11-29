@@ -15,3 +15,6 @@ Created a Person class containing the name and surname fields, decorated with pr
 decorated with a property. When a Person is added to the collection that has the same Surname as the Guider, the SameSurname Event is activated, 
 which sends the message to user about it.
 A subclass from the Person class - StrongCompany - with similar event processing logic is also implemented.
+
+Added Demo class with methods for finding the maximum and minimum value in a collection of integers.
+Implemented a delegate that returns the maximum integer value in a collection.

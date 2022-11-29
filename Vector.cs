@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace Structures
 {
     public delegate int CalculateDelegate(int[] arr);
+    public delegate object ElementDelegate(object[] arr, object obj);
     
     internal class Vector
     {
@@ -17,6 +18,11 @@ namespace Structures
         public CalculateDelegate CalculateDelegateProperty { get => calculateDelegate; set => calculateDelegate = value; }
         public string Result { get => result; set => result = value; }
 
+        public Vector()
+        {
+            arr = new int[] { 1, 2, 1, 3, 1, 4 };
+        }
+        
         public Vector(int[] arr, CalculateDelegate calculateDelegate)
         {
             this.arr = arr;

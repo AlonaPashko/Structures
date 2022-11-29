@@ -41,7 +41,7 @@ internal class Program
     {
         Console.WriteLine($"Same surname in company named {name} was not added!");
     }
-    
+  
     private static void Main(string[] args)
     {
         //int[] arr = new int[4] { 1, 3, 4, 5 };
@@ -58,18 +58,20 @@ internal class Program
         //Console.WriteLine(vector1.GetStringArr());
 
         //List<Person> persons = new List<Person>() { new("per1"), new("per2"), new("per3") };
-        Peoples peoples = new Peoples();
-        peoples.SameSurname += Message;
-        peoples.Guider = "per1";
-        peoples.Add(new("Name1", "per1"));
-        peoples.Add(new("Name2", "per2"));
-        Console.WriteLine(peoples);
+        //Peoples peoples = new Peoples();
+        //peoples.SameSurname += Message;
+        //peoples.Guider = "per1";
+        //peoples.Add(new("Name1", "per1"));
+        //peoples.Add(new("Name2", "per2"));
+        //Console.WriteLine(peoples);
 
-        Peoples company = new StrongCompany();
-        company.Guider = "per2";
-        company.SameSurname += MessageForStrong;
-        company.Add(new("Name2", "per2"));
-        company.Add(new("Name3", "per3"));
-        Console.WriteLine(company);
+        //Peoples company = new StrongCompany();
+        //company.Guider = "per2";
+        //company.SameSurname += MessageForStrong;
+        //company.Add(new("Name2", "per2"));
+        //company.Add(new("Name3", "per3"));
+        //Console.WriteLine(company);
+        Demo.Start();
+        
     }
 }
