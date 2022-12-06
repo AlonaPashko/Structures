@@ -18,3 +18,5 @@ A subclass from the Person class - StrongCompany - with similar event processing
 
 Added Demo class with methods for finding the maximum and minimum value in a collection of integers.
 Implemented a delegate that returns the maximum integer value in a collection.
+
+Added some classes for learn delegates, events and lambda-expressions.
