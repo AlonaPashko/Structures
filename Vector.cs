@@ -8,6 +8,7 @@ namespace Structures
 {
     public delegate int CalculateDelegate(int[] arr);
     public delegate object ElementDelegate(object[] arr, object obj);
+    public delegate void ExampleDelegate(int i);
     
     internal class Vector
     {
